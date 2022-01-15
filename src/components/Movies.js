@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 import Navbar from './Navbar'
 
+function Movies() {
+    return (
+        <MovieContainer>
+            <Navbar/>
+        </MovieContainer>
+    )
+}
+
 const MovieContainer = styled.section`
     background-image:url('/image/home-background.png');
     background-repeat:no-repeat;
@@ -9,12 +17,6 @@ const MovieContainer = styled.section`
     height:100vh;
 `
 
-function Movies() {
-    return (
-        <MovieContainer>
-            <Navbar/>
-        </MovieContainer>
-    )
-}
+
 
 export default Movies
