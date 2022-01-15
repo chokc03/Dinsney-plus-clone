@@ -2,6 +2,44 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 const Navbar = ()=>{
+    const items = [
+        {
+            id:1,
+            name:"홈",
+            image:"/image/home-icon.svg",
+            link:"/"
+        },
+        {
+            id:2,
+            name:"검색",
+            image:"/image/search-icon.svg",
+            link:"/Search"
+        },
+        {
+            id:3,
+            name:"관심 컨텐츠",
+            image:"/image/watchlist-icon.svg",
+            link:"/Watchlist"
+        },
+        {
+            id:4,
+            name:"오리지널",
+            image:"/image/original-icon.svg",
+            link:"/Original"
+        },
+        {
+            id:5,
+            name:"영화",
+            image:"/image/movie-icon.svg",
+            link:"/Movie"
+        },
+        {
+            id:6,
+            name:"시리즈",
+            image:"/image/series-icon.svg",
+            link:"/Series"
+        }
+    ]
     return (
         <div>
             <Menubar>
@@ -9,54 +47,16 @@ const Navbar = ()=>{
                     <LogoIcon>
                         <Logo src="/image/logo.svg"/>
                     </LogoIcon>
-                    <Item>
-                        <Link to="/Movies">
-                            <ItemIcon src="/image/home-icon.svg"/>
-                            <ItemInfo>
-                                홈
-                            </ItemInfo>
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link to="/Search">
-                            <ItemIcon src="/image/search-icon.svg"/>
-                            <ItemInfo>
-                                검색
-                            </ItemInfo>
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link to="/Watchlist">
-                            <ItemIcon src="/image/watchlist-icon.svg"/>
-                            <ItemInfo>
-                                관심 컨텐츠
-                            </ItemInfo>
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link to="/Origianl">
-                            <ItemIcon src="/image/original-icon.svg"/>
-                            <ItemInfo>
-                                오리지널
-                            </ItemInfo>
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link to="/Movie">
-                            <ItemIcon src="/image/movie-icon.svg"/>
-                            <ItemInfo>
-                                영화
-                            </ItemInfo>
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link to="/Series">
-                            <ItemIcon src="/image/series-icon.svg"/>
-                            <ItemInfo>
-                                시리즈
-                            </ItemInfo>
-                        </Link>
-                    </Item>
+                    {items.map(item=>(
+                        <Item key={item.id}>
+                            <Link to={item.link}>
+                                <ItemIcon src={item.image}/>
+                                <ItemInfo>
+                                    {item.name}
+                                </ItemInfo>
+                            </Link>
+                        </Item>
+                    ))}
                 </Categories>
                 <ProfileIcon>
                     <Profile src="/image/icon.png"/>
