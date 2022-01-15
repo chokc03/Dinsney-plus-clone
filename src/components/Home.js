@@ -40,18 +40,20 @@ const Menubar = styled.div`
         transform:scale(0.6);
         margin-left:20px;
         cursor:pointer;
+        @media screen and (max-width:789px){
+            transform:scale(0.5);
+        }
     }
 `;
 const HomeContainer = styled.section`
     position:relative;
     background-color:rgb(28,31,43);
-    width:100vw;
     height:100vh;
+    width:100%;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    margin:auto;
 `;
 const Title = styled.h2`
     font-size:2.5rem;
@@ -89,6 +91,7 @@ const Icons = styled.img`
     height:180px;
     transform:scale(1.1);
     z-index:4;
+
 `;
 const ProfileContents = styled.div`
     display:flex;
