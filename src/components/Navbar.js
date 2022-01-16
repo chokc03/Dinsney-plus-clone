@@ -59,7 +59,9 @@ const Navbar = ()=>{
                     ))}
                 </Categories>
                 <ProfileIcon>
-                    <Profile src="/image/icon.png"/>
+                    <Link to="/">
+                        <Profile src="/image/icon.png"/>
+                    </Link>
                 </ProfileIcon>
             </Menubar>
         </div>
@@ -67,24 +69,32 @@ const Navbar = ()=>{
 }
 
 const Menubar = styled.nav`
-    position:relative;
+    position:fixed;
+    background-color:rgb(9, 11, 19);
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 40px 0px 40px;
     width:100%;
-    height:80px;
+    height:100px;
+    @media screen and (max-width:1280px){
+        height:70px;
+    }
 `;
 const Categories = styled.ul`
     display:flex;
-    height:90px;
+    height:auto;
 `;
 const LogoIcon = styled.div`
     cursor:pointer;
     list-style:none;
     width:120px;
-    margin:20px;
+    height:80px;
     margin-right:60px;
+    @media screen and (max-width:1280px){
+        margin-right:20px;
+        transform:scale(0.8);
+    }
 `;
 const Logo = styled.img`
     width:100%;
@@ -100,17 +110,28 @@ const Item = styled.li`
         justify-content:center;
         align-items:center;
         width:100%;
-        height:90px;
+        height:70px;
         text-decoration:none;
+
+        @media screen and (max-width:1280px){
+            padding:5px;
+    }
+        @media screen and (max-width:548px){
+            display:none;
+        }
     }
     
 `;
 const ItemIcon = styled.img`
     width:2rem;
     margin-right:10px;
+    @media screen and (max-width:1280px){
+        margin-right:0px;
+    }
 
 `;
 const ItemInfo = styled.div`
+    display:block;
     font-size:1.5rem;
     font-weight:bold;
     line-height:1.06;
@@ -136,9 +157,13 @@ const ItemInfo = styled.div`
             opacity:1;
         }
     }
+    @media screen and (max-width:1280px){
+        display:none;
+    }
 
 `;
 const ProfileIcon = styled.div`
+    margin-bottom:20px;
     width:70px;
     height:70px;
     border-radius:50%;
@@ -147,9 +172,13 @@ const ProfileIcon = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    @media screen and (max-width:1280px){
+        transform:scale(0.8);
+    }
 `;
 const Profile = styled.img`
     transform:scale(0.1);
+
 `;
 
 
