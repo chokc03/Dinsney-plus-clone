@@ -74,9 +74,11 @@ const Menubar = styled.nav`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    top:0;
     padding:20px 40px 0px 40px;
     width:100%;
     height:100px;
+    z-index:1000;
     @media screen and (max-width:1280px){
         height:70px;
     }
