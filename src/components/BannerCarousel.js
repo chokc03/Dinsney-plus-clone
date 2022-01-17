@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const BannerCarousel = ()=>{
-    let setting={
+    const setting={
         dots:true,
         infinte:true,
         speed:500,

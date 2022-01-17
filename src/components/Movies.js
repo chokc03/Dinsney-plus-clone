@@ -45,12 +45,11 @@ function Movies() {
     )
 }
 
-const MovieContainer = styled.section`
+const MovieContainer = styled.div`
     background-image:url('/image/home-background.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-    height:100vh;
     overflow-x:hidden;
     margin-top:100px;
     @media screen and (max-width:1280px){
