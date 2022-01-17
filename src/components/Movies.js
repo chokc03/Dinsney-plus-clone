@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import BannerCarousel from './BannerCarousel'
+import ContentsCarousel from './ContentsCarousel'
 import Navbar from './Navbar'
 
 function Movies() {
@@ -7,6 +8,39 @@ function Movies() {
         <MovieContainer>
             <Navbar/>
             <BannerCarousel/>
+            <MainViewerGrid>
+                <Viewer>
+                    <img src="/image/viewers-disney.png" alt="disney"/>
+                    <video autoPlay={true} loop={true} playsInline={true}>
+                        <source src="/video/disney.mp4" type="video/mp4"/>
+                    </video>
+                </Viewer>
+                <Viewer>
+                    <img src="/image/viewers-marvel.png" alt="marvel"/>
+                    <video autoPlay={true} loop={true} playsInline={true}>
+                        <source src="/video/marvel.mp4" type="video/mp4"/>
+                    </video>
+                </Viewer>
+                <Viewer>
+                    <img src="/image/viewers-national.png" alt="national"/>
+                    <video autoPlay={true} loop={true} playsInline={true}>
+                        <source src="/video/national-geographic.mp4" type="video/mp4"/>
+                    </video>
+                </Viewer>
+                <Viewer>
+                    <img src="/image/viewers-pixar.png" alt="pixar"/>
+                    <video autoPlay={true} loop={true} playsInline={true}>
+                        <source src="/video/pixar.mp4" type="video/mp4"/>
+                    </video>
+                </Viewer>
+                <Viewer>
+                    <img src="/image/viewers-starwars.png" alt="starwars"/>
+                    <video autoPlay={true} loop={true} playsInline={true}>
+                        <source src="/video/star-wars.mp4" type="video/mp4"/>
+                    </video>
+                </Viewer>
+            </MainViewerGrid>
+            <ContentsCarousel/>
         </MovieContainer>
     )
 }
@@ -23,7 +57,45 @@ const MovieContainer = styled.section`
         margin-top:70px;
     }
 `
-
-
+const MainViewerGrid = styled.div`
+    display:grid;
+    gap:1.5rem;
+    grid-template-columns:repeat(5,minmax(100px,1fr));
+    margin:20px;
+    @media screen and (max-width:630px){
+        grid-template-columns:repeat(1,1fr);
+    }
+`;
+const Viewer = styled.div`
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    border-radius:20px;
+    position:relative;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.8);
+    border: solid 5px rgba(180,180,180,0.1);
+    transition: 200ms all ease-in-out; 
+    img{
+        width:100%;
+        background-color:transparent;
+        z-index:1;
+    }
+    video{
+        width:100%;
+        height:100%;
+        position:absolute;
+        opacity:0;
+        z-index:0;
+    }
+    &:hover{
+        transform:scale(0.9);
+        border: solid 5px rgba(180,180,180,1);
+        video{
+            opacity:1;
+        }
+    }
+`;
 
 export default Movies
