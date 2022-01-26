@@ -7,7 +7,7 @@ const Navbar = ()=>{
             id:1,
             name:"홈",
             image:"/image/home-icon.svg",
-            link:"/"
+            link:"/Movies"
         },
         {
             id:2,
@@ -180,7 +180,6 @@ const ProfileIcon = styled.div`
 `;
 const Profile = styled.img`
     transform:scale(0.1);
-
 `;
 
 
