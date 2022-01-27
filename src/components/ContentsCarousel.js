@@ -27,20 +27,6 @@ const ContentsCarousel=({Data,CategoryName})=>{
                 }
             },
             {
-                breakpoint: 1730,
-                settings:{
-                    slidesToShow:3,
-                    slidesToScroll:3
-                }
-            },
-            {
-                breakpoint: 1310,
-                settings:{
-                    slidesToShow:2,
-                    slidesToScroll:2
-                }
-            },
-            {
                 breakpoint: 630,
                 settings:{
                     slidesToShow:1,
@@ -93,7 +79,7 @@ const Movies = styled(Slider)`
         border-radius:20px;
         max-width:400px;
         cursor:pointer;
-        @media screen and (max-width:1500px){
+        @media screen and (max-width:2100px){
             width:100%;
         }
     }
