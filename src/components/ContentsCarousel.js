@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 const ContentsCarousel=({Data,CategoryName})=>{
 
@@ -38,7 +39,9 @@ const ContentsCarousel=({Data,CategoryName})=>{
     const newDataImage = Data.movies.map((datas)=>{
         return(
             <div key={datas.id}>
-                <img  src={datas.cardImg} alt={datas.title}/>
+                <Link to={datas.linkTitle}>
+                    <img  src={datas.cardImg} alt={datas.title}/>
+                </Link>            
             </div>
         )
     });
@@ -79,6 +82,10 @@ const Movies = styled(Slider)`
         border-radius:20px;
         max-width:400px;
         cursor:pointer;
+        &:hover{
+            border:solid 5px #fff;
+            transform:scale(0.95);
+        }
         @media screen and (max-width:2100px){
             width:100%;
         }

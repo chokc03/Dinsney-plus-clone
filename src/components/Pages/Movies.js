@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import BannerCarousel from '../BannerCarousel'
 import ContentsCarousel from '../ContentsCarousel'
 import Data from "../../Data.json";
-import Data2 from "../../Data2.json";
 import Navbar from '../Navbar'
 import Footer from '../Footer';
 
@@ -45,9 +44,9 @@ const Movies =()=>{
                     </Viewer>
                 </MainViewerGrid>
                 <ContentsCarousel Data={Data} CategoryName="디지니+ 최신작" />
-                <ContentsCarousel Data={Data2} CategoryName="놓칠 수 없는 히트 영화 모음" />
+                <ContentsCarousel Data={Data} CategoryName="놓칠 수 없는 히트 영화 모음" />
                 <ContentsCarousel Data={Data} CategoryName="감동적인 이야기" />
-                <ContentsCarousel Data={Data2} CategoryName="취향저격 추천 컨텐츠" />
+                <ContentsCarousel Data={Data} CategoryName="취향저격 추천 컨텐츠" />
                 <ContentsCarousel Data={Data} CategoryName="몰아보기 끝판왕" />
             </Wrap>
             <Footer/>

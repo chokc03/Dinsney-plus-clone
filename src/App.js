@@ -7,7 +7,6 @@ import Movie from './components/Pages/Movie';
 import Series from './components/Pages/Series';
 import Original from './components/Pages/Original';
 
-
 function App() {
   return (
     <>
