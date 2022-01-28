@@ -1,8 +1,7 @@
 #### Disney Plus clone Website
 
 ## Demo
-
-- website:
+![image](https://user-images.githubusercontent.com/86751419/151545427-c4daf5e1-1d96-455a-8ffc-c85c6b1fe908.png)
 
 ## Purpose of the project
 - Learn how styled-component works
