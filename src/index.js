@@ -4,6 +4,7 @@ import {createGlobalStyle} from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
+//Used GlobalStyle to reset the website css
 const GlobalStyles = createGlobalStyle`
   *{
     margin:0;

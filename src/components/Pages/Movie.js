@@ -1,3 +1,5 @@
+
+
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { MovieContainer } from "./Movies";

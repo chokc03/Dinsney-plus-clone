@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file makes carousel for the movie contents 
+*/
+
 import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -36,6 +41,7 @@ const ContentsCarousel=({Data,CategoryName})=>{
             },
         ]
     }
+    //used Mapping to list the data from Data.json
     const newDataImage = Data.movies.map((datas)=>{
         return(
             <div key={datas.id}>

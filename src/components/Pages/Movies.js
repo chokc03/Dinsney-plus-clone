@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file shows the main page of the disney plus website
+*/
+
 import styled from 'styled-components'
 import BannerCarousel from '../BannerCarousel'
 import ContentsCarousel from '../ContentsCarousel'
@@ -53,7 +58,7 @@ const Movies =()=>{
         </MovieContainer>
     )
 };
-
+// Used for the global styled-component for the background
 export const MovieContainer = styled.div`
     background-image:url('/image/home-background.png');
     background-repeat:no-repeat;

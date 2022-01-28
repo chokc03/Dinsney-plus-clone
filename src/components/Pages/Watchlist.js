@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file shows watchlists
+*/
+
 import styled from 'styled-components';
 import Navbar from '../Navbar';
 import { MovieContainer } from './Movies';

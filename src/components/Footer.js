@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file makes footer for the website
+*/
+
 import styled from 'styled-components';
 
 const Footer =()=>{
@@ -31,8 +36,12 @@ const FooterContainer = styled.div`
     height:150px;
     padding:20px;
     font-size:15px;
-
-
+    @media screen and (max-width:800px){
+        font-size:13px;
+    }
+    @media screen and (max-width:630px){
+        height:200px;
+    }
 `;
 
 const Footerlogo = styled.img`
@@ -42,6 +51,8 @@ const Footerlogo = styled.img`
 
 const Services = styled.ul`
     display:flex;
+    justify-content:center;
+    align-items:center;
     margin:10px;
     li{
         list-style:none;
@@ -51,6 +62,11 @@ const Services = styled.ul`
         &:hover{
             color:#fff;
         }
+        
+
+    }
+    @media screen and (max-width:630px){
+        flex-direction:column;   
     }
 `;
 

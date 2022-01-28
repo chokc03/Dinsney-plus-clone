@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file heps to search movies
+*/
+
 import {useState} from 'react';
 import styled from 'styled-components';
 import Footer from '../Footer';

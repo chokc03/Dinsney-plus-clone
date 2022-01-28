@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file makes the navbar
+*/
+
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 

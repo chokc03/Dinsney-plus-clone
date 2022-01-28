@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file helps to choose the profile for login
+*/
+
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import {BsPlusLg} from 'react-icons/bs'

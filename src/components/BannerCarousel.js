@@ -1,9 +1,15 @@
+/*
+  Writer : Kyungchan Cho
+  This file makes carousel for the banner
+*/
+
 import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const BannerCarousel = ()=>{
+    // Make setting for the react-slick for banner carousel
     const setting={
         dots:true,
         infinte:true,
@@ -14,6 +20,7 @@ const BannerCarousel = ()=>{
     }
     return(
         <>
+        {/* Used imported Slider from react-slick */}
             <SliderWrap {...setting}>
                 <SliderImage>
                     <img src="/image/slider-badag.jpg" alt=""/>
@@ -32,6 +39,7 @@ const BannerCarousel = ()=>{
     )
 };
 
+//Used Slider for the banner
 const SliderWrap = styled(Slider)`
     margin:20px;
     position:relative;

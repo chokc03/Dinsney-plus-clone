@@ -1,3 +1,8 @@
+/*
+  Writer : Kyungchan Cho
+  This file connects all the components with Router
+*/
+
 import {Routes, Route} from 'react-router-dom';
 import Home from './components/Pages/Home';
 import Movies from './components/Pages/Movies';
@@ -10,6 +15,7 @@ import Original from './components/Pages/Original';
 function App() {
   return (
     <>
+    {/* Used Routes to Link the following path with component  */}
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route path="/Movies" element={<Movies/>}/>
