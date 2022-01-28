@@ -28,8 +28,8 @@
             slidesToScroll:1,
             autoplay:true,
         }
-        ```
-        
+        ``` 
+
     - Used Slider : 
         ```ts
             <SliderWrap {...setting}>
