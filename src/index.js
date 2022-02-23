@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GlobalStyles/>
       <App />
     </BrowserRouter>,
