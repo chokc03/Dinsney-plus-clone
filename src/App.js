@@ -17,7 +17,7 @@ function App() {
     <>
     {/* Used Routes to Link the following path with component  */}
         <Routes>
-          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/Dinsney-plus-clone/" element={<Home/>}/>
           <Route path="/Movies" element={<Movies/>}/>
           <Route path="/Search" element={<Search/>}/>
           <Route path="/Watchlist" element={<Watchlist/>}/>

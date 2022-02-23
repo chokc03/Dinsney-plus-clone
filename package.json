@@ -1,4 +1,5 @@
 {
+  "homepage":"https://chokc03.github.io/",
   "name": "disney-plus-clone-website",
   "version": "0.1.0",
   "private": true,
@@ -20,8 +21,8 @@
     "web-vitals": "^2.1.3"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "NODE_PATH=src react-scripts start",
     "start:dev": "NODE_PATH=src node scripts/build.js",
     "build": "NODE_PATH=src react-scripts build",
